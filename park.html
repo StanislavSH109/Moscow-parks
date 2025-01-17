@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Парки Москвы</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrap">
+            <svg class="hero__icon hero__icon--figure-1" width="80" height="90" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-figure-1"></use>
+            </svg>
+            <h1 class="hero__title">Оздоровление души и тела в живописных парках Москвы</h1>
+            <svg class="hero__icon hero__icon--figure-2" width="80" height="90" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-figure-2"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <h2 class="visually-hidden">Прогулки в парке</h2>
+        <div class="container">
+          <p class="info__text">Прогулки в&nbsp;парке&nbsp;&mdash; это прекрасный способ насладиться свежим воздухом
+            и&nbsp;окунуться в&nbsp;природную красоту. Шум листвы под ногами и&nbsp;пение птиц создают идеальную атмосферу
+            для отдыха и&nbsp;размышлений.
+          </p>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <h2 class="visually-hidden">Карта с парками</h2>
+          <div class="map__image">
+            <picture>
+              <source media="(max-width: 767px)" srcset="images/img-map-mobile.png 1x, images/img-map-mobile@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="images/img-map-tablet.png 1x, images/img-map-tablet@2x.png 2x">
+              <img class="team-card__img" src="images/img-map.png" srcset="images/img-map@2x.png 2x" width="1440"
+                height="638" alt="Фотография карта">
+            </picture>
+            <ul class="map__pins">
+              <li class="map__pin map__pin--1">ботанический сад</li>
+              <li class="map__pin map__pin--2">парк останкино</li>
+              <li class="map__pin map__pin--3">вднх</li>
+              <li class="map__pin map__pin--4">останкинский пруд</li>
+              <li class="map__pin map__pin--5">парк дубовая роща</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

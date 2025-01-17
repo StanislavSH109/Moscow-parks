@@ -1,0 +1,133 @@
+.map {
+    position: relative;
+
+    .container {
+        padding: 0;
+        max-width: 1920px;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__pin {
+        position: absolute;
+
+        display: flex;
+        max-width: 200px;
+
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $color-white;
+
+        &:after {
+            content: "";
+            width: 1px;
+            height: 40px;
+            background-color: $color-white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 105%;
+
+            @include vp-767 {
+                height: 20px;
+            }
+        }
+
+        @include vp-1023 {
+            max-width: 150px;
+
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        @include vp-767 {
+            max-width: 100px;
+
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__pin--1 {
+        top: 80px;
+        left: 40px;
+
+        @include vp-1023 {
+            top: 72px;
+            left: 0;
+        }
+
+        @include vp-767 {
+            top: 22px;
+            left: 0;
+        }
+    }
+
+    &__pin--2 {
+        top: 238px;
+        left: 238px;
+
+        @include vp-1023 {
+            top: 175px;
+            left: 105px;
+        }
+
+        @include vp-767 {
+            top: 78px;
+            left: 41px;
+        }
+    }
+
+    &__pin--3 {
+        top: 76px;
+        left: 495px;
+
+        @include vp-1023 {
+            top: 73px;
+            left: 254px;
+        }
+
+        @include vp-767 {
+            top: 30px;
+            left: 110px;
+        }
+    }
+
+    &__pin--4 {
+        top: 140px;
+        left: 693px;
+
+        @include vp-1023 {
+            top: 106px;
+            left: 356px;
+        }
+
+        @include vp-767 {
+            top: 33px;
+            left: 153px;
+        }
+    }
+
+    &__pin--5 {
+        bottom: 288px;
+        right: 354px;
+
+        @include vp-1023 {
+            bottom: 223px;
+            right: 162px;
+        }
+
+        @include vp-767 {
+            bottom: 100px;
+            right: 51px;
+        }
+    }
+}
