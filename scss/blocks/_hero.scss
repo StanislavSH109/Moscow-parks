@@ -1,19 +1,19 @@
 .hero {
   width: 100%;
   min-height: 630px;
-  background-image: url("/images/bg-banner.png");
+  background-image: url("./images/bg-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
   @include vp-1023 {
     min-height: 530px;
-    background-image: url("/images/bg-banner-tablet.png");
+    background-image: url("./images/bg-banner-tablet.png");
   }
 
   @include vp-767 {
     min-height: 450px;
-    background-image: url("/images/bg-banner-mobile.png");
+    background-image: url("./images/bg-banner-mobile.png");
   }
 
   &__wrap {
@@ -26,7 +26,7 @@
     @include vp-1023 {
       min-height: 530px;
     }
-    
+
     @include vp-767 {
       min-height: 450px;
     }
@@ -40,7 +40,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.08em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: $color-myrtle;
     margin: 0;
 
@@ -64,7 +64,7 @@
 
   &__icon--figure-1 {
     top: 187px;
-    right: 20%;
+    right: 8%;
 
     @include vp-1023 {
       top: 85px;
@@ -75,25 +75,25 @@
 
     @include vp-767 {
       top: 70px;
-      left: 17%;
+      left: 13%;
     }
   }
 
   &__icon--figure-2 {
     top: 273px;
-    right: 19%;
+    right: 7%;
 
     @include vp-1023 {
       top: auto;
       bottom: 85px;
+      right: auto;
       left: 50%;
       transform: translateX(-50%);
     }
 
     @include vp-767 {
       bottom: 70px;
-      left: auto;
-      right: 20px;
+      left: 75%;
       transform: translateX(0);
     }
   }
